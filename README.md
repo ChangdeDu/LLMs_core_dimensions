@@ -32,7 +32,7 @@ cd data_collecting
 
 The code used for odd-one-out data collecting is given. But you can skip this step and download the data we collected directly from [OSF](https://osf.io/qn5uv/).
 
-### Learning Interpretable Embeddings
+## Learning Interpretable Embeddings
 
 We learn interpretable embeddings from the collected triplet odd-one-out recordings. The data can come from:
 
