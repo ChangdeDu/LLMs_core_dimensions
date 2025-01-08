@@ -3,9 +3,9 @@
 ## Overview
 
 This repository consists of three parts:
-1. `data_collecting`: code for collecting triplet odd-one-out data using different models (LLMs, MLLMs) or features extracted from DNNs or brain ROIs. See [Learning Low-dimensional Embeddings](#learning-representational-embeddings) for more details.
-2. `model_training`: code for learning interpretable embeddings from the collected triplet odd-one-out recordings (using SPoSE method). See [Learning Low-dimensional Embeddings](#learning-representational-embeddings) for more details.
-3. `analysis_and_figure_drawing`: code and experiments for reproducing the main results of the paper. See [Main Experiments of the Paper](#main-experiments-of-the-paper) for more details.
+1. `data_collecting`: code for collecting triplet odd-one-out data using different models (LLMs, MLLMs) or features extracted from DNNs or brain ROIs.
+2. `model_training`: code for learning interpretable embeddings from the collected triplet odd-one-out recordings (using SPoSE method). 
+3. `analysis_and_figure_drawing`: code and experiments for reproducing the main results of the paper. 
 
 ## Environment Setup
 
