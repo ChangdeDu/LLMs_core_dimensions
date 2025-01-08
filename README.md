@@ -30,7 +30,7 @@ cd LLMs_core_dimensions
 cd data_collecting
 ```
 
-The code used for data collecting is given. But you can skip this step and download the data we collected directly from [OSF](https://osf.io/qn5uv/).
+The code used for odd-one-out data collecting is given. But you can skip this step and download the data we collected directly from [OSF](https://osf.io/qn5uv/).
 
 ### Learning Interpretable Embeddings
 
