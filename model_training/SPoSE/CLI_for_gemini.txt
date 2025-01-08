@@ -1,0 +1,1 @@
+python train.py --task odd_one_out --modality gemini_pro_vision/ --triplets_dir ./data/gemini_pro_vision_things/ --learning_rate 0.001 --lmbda 0.0035 --embed_dim 100 --batch_size 100 --epochs 500 --window_size 100 --steps 100 --sampling_method normal --device cpu --rnd_seed 142
