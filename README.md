@@ -4,7 +4,7 @@
 
 This repository consists of three parts:
 1. `data_collecting`: code for collecting triplet odd-one-out data using different models (LLMs, MLLMs) or features extracted from DNNs or brain ROIs.
-2. `model_training`: code for learning interpretable embeddings from the collected triplet odd-one-out recordings (using SPoSE method). 
+2. `model_training`: code for learning interpretable embeddings from the collected triplet odd-one-out recordings (using [SPoSE](https://github.com/ViCCo-Group/SPoSE) method). 
 3. `analysis_and_figure_drawing`: code and experiments for reproducing the main results of the paper. 
 
 ## Environment Setup
