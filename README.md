@@ -45,11 +45,37 @@ We learn interpretable embeddings from the collected triplet odd-one-out recordi
 cd model_training
 ```
 
-The code is copied from [SPoSE's official repository](https://github.com/ViCCo-Group/SPoSE). Please see the [README](../model_training/SPoSE/README.md) file provided by the original author for code details. We have written the model training instructions and configuration in a separate file, and you can run the SPoSE algorithm directly by executing the following commands to learn interpretable low-dimensional embeddings.
+The code is copied from [SPoSE's official repository](https://github.com/ViCCo-Group/SPoSE). Please see the [README](../model_training/SPoSE/README.md) file provided by the original author for code details. 
+
+
+You should store the training and test data in the `model_training/SPoSE/data` folder before running it.
+
+The path to the `model_training/SPoSE` folder should be as follows:
+
+```
+SPoSE
+├── data
+│   └── chatgpt3.5_things
+│       └── train_90.txt
+│       └── test_10.txt
+│   └── gemini_pro_vision_things
+│   └── human_things
+│   └── simclr_things
+│   └── vgg16_things
+│   └── ...
+├── models
+├── results
+├── get_spose_embedding.py
+├── ...
+```
+
+We have written the model training instructions and configuration in a separate file, and you can run the SPoSE algorithm directly by executing the following commands to learn interpretable low-dimensional embeddings.
 
 ```bash
 python get_spose_embedding.py
 ```
+
+The learned low-dimensional embedding is stored in the results folder, named `weights_sorted.npy`, and the path information shows the specific parameter configuration of the learning process. For example, SimCLR' low-dimensional embedding will be stored in `model_training/SPoSE/results/simclr/100d/0.007/seed242/weights_sorted.npy`. Here `100d` represents the initialization dimension, `0.007` represents the learning rate, and `seed242` represents the random seed.
 
 ## Main Experiments of the Paper and Figure Drawing
 
@@ -83,7 +109,7 @@ analysis_and_figure_drawing
 ├── ...
 ```
 
-After that, you can run the relevant experimental analysis and figure drawing code one by one. The code is run in python or matlab. For example, if you want to reproduce Figure 2a, then you can run `draw_figure2a_step1_get_RDM48_for_models.m` and then `draw_figure2a_step2_r48_values_against_dims_retained_llm_mllm_human.m` in matlab environment.
+After that, you can run the relevant experimental analysis and figure drawing code one by one. Each important figure in the paper is associated with one (or more) code files, and the filename indicates the index of the corresponding figure. For example, if you want to reproduce Figure 2a, then you can run `draw_figure2a_step1_get_RDM48_for_models.m` and then `draw_figure2a_step2_r48_values_against_dims_retained_llm_mllm_human.m` in Matlab environment.
 
 ## Acknowledgments
 
