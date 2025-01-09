@@ -83,7 +83,7 @@ The learned low-dimensional embedding is stored in the results folder, named `we
 cd analysis_and_figure_drawing
 ```
 
-Before running the experiment and drawing the figures, you should download the required data from [OSF](https://osf.io/qn5uv/) and extract it to the `data` folder:
+Before running the experiment and drawing the figures, you should download the required data from [OSF](https://osf.io/qn5uv/) and extract it to the `analysis_and_figure_drawing/data` folder:
 
 ```bash
 wget https://osf.io/download/qn5uv/ -O data.tar.gz
