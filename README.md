@@ -20,7 +20,7 @@ cd LLMs_core_dimensions
 
 ### Step 2: Install Dependencies
 
-1. The code uses Python 3.8, MATLAB R2022b, PyTorch 1.6.0.
+1. The code uses Python 3.8, MATLAB R2021b, PyTorch 1.6.0.
 2. Install PyTorch: `pip install pytorch` or `conda install pytorch torchvision -c pytorch` (the latter is recommended if you use Anaconda)
 3. Install Python dependencies: `pip install -r requirements.txt`
 
